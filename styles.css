@@ -1,6 +1,7 @@
 
 body {
     background-color: rgb(255, 255, 255);
+    position: relative;
 }
 
 .container {
@@ -31,7 +32,7 @@ width: 130%;
 .nav {
     width: 1500px;
     position: absolute;
-    top: 46.8%;
+    top: 51%;
     left: 65%;
     transform: translate(-50%, -50%);
   
@@ -48,23 +49,142 @@ width: 130%;
 }
 
 
+/** REVIEWS **/
+
+img {
+    border-radius: 2%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    vertical-align: middle;
+}
+
+.reviews {
+    height: 2000px;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    display: block;
+    font-family: lobster;
+    text-align: center;
+    font-size: 4em;
+}
+
+.review-img {
+    display: flex;
+    width: 1700px;
+    padding: 4%;
+    margin: 25px 0;
+
+}
+.review1 {
+    padding: 1%;
+    flex: 1.3344;
+    -webkit-filter: brightness(100%);
+
+}
+
+.text1 {
+    opacity: 0;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+}
+.review1:hover  .text1 {
+    -webkit-filter: brightness(100%);
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    transition: all 500ms ease;
+
+    opacity: 1;
+    transform: translateY(-300px);
+    -webkit-transform: translateY(-300px);
+}
+
+.review2 {
+    padding: 1%;
+    flex: 1.3345;
+}
+.text2 {
+    opacity: 0;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+}
+.review2:hover  .text2 {
+    -webkit-filter: brightness(100%);
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    transition: all 500ms ease;
+
+    opacity: 1;
+    transform: translateY(-300px);
+    -webkit-transform: translateY(-300px);
+}
+
+.review3 {
+    padding: 1%;
+    flex: 0.7505;
+}
+.text3 {
+    opacity: 0;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+}
+.review3:hover  .text3 {
+    -webkit-filter: brightness(100%);
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    transition: all 500ms ease;
+
+    opacity: 1;
+    transform: translateY(-300px);
+    -webkit-transform: translateY(-300px);
+}
+
+.review4 {
+    padding: 1%;
+    flex: 1.5023;
+}
+.text4 {
+    opacity: 0;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+}
+.review4:hover {
+    -webkit-filter: brightness(30%);
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    transition: all 500ms ease;
 
 
+}
+
+
+
+/** FOOTER **/
 
 
 .footer {
-    position:absolute;
+    position: absolute;
     bottom: 0;
     text-align: center;
     margin: 0%;
     background-color: rgb(206, 206, 206);
-    width: 98%;
+    width: 99%;
     height: 290px;
     color: rgb(78, 78, 78);
     padding: 12px;
     font-family: Arial;
     font-weight: lighter;
     font-size: 10px;
+    left: 0;
 }
 .map {
     width: 25%;
