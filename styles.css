@@ -35,11 +35,41 @@ body {
   }
 
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 800px) {
     .container {
       display: none;
     }
   }
+  @media screen and (max-width: 800px) {
+    .location {
+      display: none;
+    }
+  }
+  @media screen and (min-width: 800px) {
+    .location-mob {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    .services {
+      display: none;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .services-mob {
+      display: none;
+    }
+  }
+@media screen and (max-width: 800px) {
+    .footer {
+        display: none;
+    }
+}
+@media screen and (min-width: 800px) {
+    .footer-mob {
+        display: none;
+    }
+}
 
 
   .mmi {
@@ -69,7 +99,7 @@ body {
 border-radius: 0%;
 width: 93%;
 padding-left: 8%;
-position: absolute;
+position: relative;
 margin: auto;
 }
 
@@ -450,10 +480,16 @@ LOCATION AND CONTACT
     text-align: center;
     font-size: 4em;
     color: white;
-
     position: relative;
-    
-    
+}
+.location-mob {
+    height: 1210px;
+    background-color: rgba(28, 28, 28, .6);
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 4em;
+    color: white;
+    position: relative;   
 }
 
 .loctext {
@@ -463,7 +499,13 @@ LOCATION AND CONTACT
     margin-left: 20px;
     margin-right: 1%;
 }
-
+.loctext-mob {
+    width: 90%;
+    font-size: 0.5em;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 10%;
+}
 .map {
     width: 39%;
     position:absolute;
@@ -477,7 +519,16 @@ LOCATION AND CONTACT
     padding: 0;
     margin-left: 50px;
 }
-
+.map-mob {
+    width: 98.7%;
+    position:relative;
+    margin: auto;
+    height: 465px;
+    border-color: black;
+    border-width: 3px;
+    border-radius: 2%;
+    padding: 0;
+}
 
 /*
 SERVICES
@@ -490,15 +541,26 @@ SERVICES
     height: 1050px;
     margin-top: 1%;
     margin-bottom: 0%;
-    display: block;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
     font-size: 4em;
     color: white;
-
+    
     position: relative;
     background-color: rgba(28, 28, 28, .6);
-
+}
+.services-mob {
+    top: 0;
+    height: 650px;
+    margin-top: 1%;
+    margin-bottom: 0%;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 4em;
+    color: white;
+    
+    position: relative;
+    background-color: rgba(28, 28, 28, .6);
 }
 .menu {
     width:45%;
@@ -508,7 +570,7 @@ SERVICES
 }
 
 .menu-items {
-    width: 60%;
+    width: 90%;
     height: 600px;
     font-size: 40px;
     font-family: lobster;
@@ -518,6 +580,19 @@ SERVICES
 
     position: absolute;
     top: 56.8%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.menu-items-mob {
+    width: 90%;
+    height: 80px;
+    font-size: 30px;
+    font-family: lobster;
+
+    margin:auto;
+
+    position: absolute;
+    top: 35.8%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -541,7 +616,31 @@ SERVICES
     left: 0;
     
 }
+.footer-mob {
+    position: relative;
+    bottom: 0;
+    text-align: center;
+    margin: 0%;
+    background-color: rgb(28, 28, 28);
+    width: 95%;
+    height: 370px;
+    color: rgb(255, 255, 255);
+    padding: 12px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: lighter;
+    font-size: 10px;
+    left: 0;
+    
+}
 .footer a {
+    text-decoration: none;
+    color: white;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: .5em;
+    font-size: 30px;
+}
+.footer-mob a {
     text-decoration: none;
     color: white;
     padding-left: 1em;
